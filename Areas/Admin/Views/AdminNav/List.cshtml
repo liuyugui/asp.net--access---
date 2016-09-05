@@ -1,0 +1,39 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>导航栏排序</title>
+
+    <link rel="stylesheet" href="~/Public/basic.css" />
+    <link rel="stylesheet" href="~/Public/Admin/admin.css" />
+
+</head>
+<body>
+    
+    <h3>导航栏调整</h3>
+
+    <ul>
+				
+	    @foreach ( var stakerholder in ViewBag.list )
+	    {          
+	        <li>
+                <span>@stakerholder.nID</span>
+                <a href="@stakerholder.url">@stakerholder.title</a>
+                <input type="text" value="@stakerholder.order">
+	            
+               <a href="/Admin/AdminNav/updata/?order=25&nID=@stakerholder.nID" class="btn btn-def">更新</a>
+
+	        </li>
+	    }
+	</ul>
+
+
+
+
+</body>
+</html>

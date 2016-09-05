@@ -1,0 +1,66 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>文章列表</title>
+
+    <link rel="stylesheet" href="~/Public/basic.css" />
+    <link rel="stylesheet" href="~/Public/Admin/admin.css" />
+
+</head>
+<body>
+    <div class="w1200 marginc border1 admin-main">
+
+		<div class="header color-blueviolet w100p">
+        	
+        	<h2 class="color-white ml20 mb20">CMS</h2>
+        	
+        	<p class="color-white ml20 mb20">文章列表</p>
+        </div>
+		
+		
+		
+		<div class="admin-left">
+			
+			<ul>
+				<li><a href="/">去首页</a></li>
+				<li class="admin-left-line-li"><span class="admin-left-line">&nbsp;文章管理</span></li>
+				<li><a href="/Admin/AdminArticle/Index">发布文章</a></li>
+				<li><a href="/Admin/AdminArticle/List">文章列表</a></li>
+				<li class="admin-left-line-li"><span class="admin-left-line">&nbsp;导航栏管理</span></li>
+				<li><a href="">导航栏排序</a></li>
+				<li class="admin-left-line-li"><span class="admin-left-line">&nbsp;关键栏目管理</span></li>
+				<li><a href="">关于我们</a></li>
+				<li><a href="">联系我们</a></li>
+			</ul>
+			
+		</div>
+		
+		<div class="admin-right">
+			
+			<ul>
+				
+	         @foreach ( var stakerholder in ViewBag.list )
+	          {          
+	        <li>
+	            <h3> @stakerholder.title </h3>
+	            <p>@stakerholder.contnet</p>
+	            <span>
+        			<button class="btn btn-list">删除</button>
+        			<button class="btn btn-list">编辑</button>
+        			<button class="btn btn-list">预览</button>
+        		</span>
+	        </li>
+	          }
+	        </ul>
+			
+		</div>
+		
+    </div>
+</body>
+</html>

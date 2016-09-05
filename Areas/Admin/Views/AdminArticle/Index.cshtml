@@ -1,0 +1,55 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>发布文章</title>
+
+    <link rel="stylesheet" href="~/Public/basic.css" />
+    <link rel="stylesheet" href="~/Public/Admin/admin.css" />
+</head>
+<body>
+    <div class="main w1200 marginc border">
+        
+        <div class="header color-blueviolet w100p">
+        	
+        	<h2 class="color-white ml20 mb20">CMS</h2>
+        	
+        	<p class="color-white ml20 mb20">发布文章</p>
+        </div>
+        
+        <div class="w100p mb50">
+        	
+        	<form action="/admin/AdminArticle/add" class="mt20 ml20" method="post">
+        		
+        		<div class="mt20">
+        			标题：<input type="text" name="title" class="w100" />
+        		</div>
+        		
+        		<div class="mt20">
+        			内容：<textarea  cols="100" rows="10"  name="content" ></textarea>
+        		</div>
+        		
+        		
+        		
+        		<div class="mt20">
+        			<button class="btn btn-def">发布</button>
+        		</div>
+        		
+        	</form>
+        	
+        	
+        </div>
+        
+        
+        
+        
+        
+        
+    </div>
+</body>
+</html>

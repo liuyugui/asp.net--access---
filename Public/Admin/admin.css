@@ -1,0 +1,120 @@
+﻿.header{
+	height: 80px;
+}
+.admin-main{
+	position: relative;
+}
+
+.admin-left{
+	float: left;
+	background: blueviolet;
+	width: 120px;
+	
+	position: absolute;
+	top: 80px;
+	left: 0px;
+	
+}
+
+.admin-right{
+	float: right;
+	/*background: bisque;*/
+	position: absolute;
+	left: 130px;
+	top: 90px;
+	right: 0px;
+
+}
+
+.admin-left ul,.admin-right ul{
+	list-style: none;
+	
+}
+
+.admin-left ul li{
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;	
+	border-top: 1px solid white;
+}
+
+.admin-left ul li a{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+}
+
+.admin-left ul li a:hover{
+	background: white;
+	color: blueviolet;
+}
+
+.admin-left-line-li{
+	position: relative;
+}
+.admin-left-line{
+	background: orangered;
+	/*width: 100%;
+	height: 100%;*/
+	display: inline-block;
+	color: white;
+	position: absolute;
+	left: 0px;
+	top: 2px;
+	right: 0px;
+	bottom: 2px;
+	text-align: left;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+	font-size: 10px;
+}
+
+
+.admin-right ul{
+	
+	width: 100%;
+	height: 40px;
+	/*background: palegreen;*/
+}
+
+.admin-right ul li{
+	width: 100%;
+	height: 100%;
+	/*background: lavender;*/
+	border-bottom: 1px solid #ccc;
+}
+.admin-right ul li:hover{
+	
+	background: lemonchiffon;
+	
+}
+
+
+.admin-right ul li h3{
+	
+	float: left;
+	line-height: 40px;
+}
+
+.admin-right ul li p{
+	float: left;
+	line-height: 40px;
+	margin-left: 10px;
+	
+}
+.admin-right ul li span{
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
